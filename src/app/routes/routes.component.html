@@ -1,0 +1,11 @@
+<h1>Pysäkit (Gransinmäki)</h1>
+<ul>
+  <li *ngFor="let pysakki of reitit">
+    {{ pysakki.name }}
+    <ul>
+      <li *ngFor="let reitti of pysakki.patterns">
+        {{ reitti.route.shortName }}: {{ reitti.route.longName }}
+      </li>
+    </ul>
+  </li>
+</ul>
